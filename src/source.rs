@@ -1,11 +1,10 @@
 use std::collections::VecDeque;
 use std::io::Cursor;
 use std::sync::{Arc, Mutex};
-use std::time::Instant;
+use std::time::{Instant, Duration};
 
-use bevy::utils::HashSet;
-use bevy::utils::hashbrown::HashMap;
-use bevy::{audio::Source, prelude::*, utils::Duration};
+use bevy::platform::collections::{HashMap, HashSet};
+use bevy::{audio::Source, prelude::*};
 use num_enum::TryFromPrimitive;
 use rustysynth::{SampleHeader, SoundFont};
 

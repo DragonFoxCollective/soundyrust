@@ -1,11 +1,11 @@
-use bevy::audio::AudioPlugin;
+use bevy::audio::{AudioPlugin, Volume};
 use bevy::prelude::*;
 use soundyrust::*;
 
 fn main() {
 	let mut app = App::new();
 	app.add_plugins(DefaultPlugins.set(AudioPlugin {
-		global_volume: GlobalVolume::new(0.2),
+		global_volume: GlobalVolume::new(Volume::Linear(0.2)),
 		..default()
 	}))
 	.add_plugins(SoundyPlugin)

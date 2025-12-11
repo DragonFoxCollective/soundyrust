@@ -1,6 +1,8 @@
 use std::fmt::Display;
 
-#[derive(Debug, Clone, Copy, PartialEq)]
+use bevy::reflect::Reflect;
+
+#[derive(Debug, Clone, Copy, PartialEq, Reflect)]
 pub enum NoteLetter {
     C,
     D,
@@ -11,7 +13,7 @@ pub enum NoteLetter {
     B,
 }
 
-#[derive(Debug, Clone, Copy, PartialEq)]
+#[derive(Debug, Clone, Copy, PartialEq, Reflect)]
 pub struct Note {
     pub note_letter: NoteLetter,
     pub sharp: bool,

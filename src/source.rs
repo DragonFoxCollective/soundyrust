@@ -391,7 +391,7 @@ impl MidiAudioTrack {
     }
 }
 
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash, Reflect)]
 pub struct MidiAudioTrackHandle(usize);
 
 pub struct MidiDecoder {

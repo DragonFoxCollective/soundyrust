@@ -3,8 +3,9 @@ use std::io::Cursor;
 use std::sync::{Arc, Mutex};
 use std::time::{Duration, Instant};
 
+use bevy::audio::Source;
 use bevy::platform::collections::{HashMap, HashSet};
-use bevy::{audio::Source, prelude::*};
+use bevy::prelude::*;
 use num_enum::TryFromPrimitive;
 use rustysynth::{SampleHeader, SoundFont};
 
